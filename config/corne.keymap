@@ -59,14 +59,14 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q            &kp W            &kp E                &kp R              &kp T                &kp Y        &kp U              &kp I                &kp O            &kp P               &kp LEFT_BRACKET
-&kp TAB    &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_CONTROL D  &hrm LEFT_SHIFT F  &kp G                &kp H        &hrm LEFT_SHIFT J  &hrm LEFT_CONTROL K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI  &kp SQT
-&kp GRAVE  &kp Z            &kp X            &kp C                &kp V              &kp B                &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp RIGHT_BRACKET
-                                             &kp DEL              &mo 1              &hrm LEFT_GUI RET    &lt 4 SPACE  &mo 3              &kp BACKSPACE
+&kp ESC    &kp Q            &kp W            &kp E                &kp R              &kp T        &kp Y        &kp U              &kp I                &kp O            &kp P               &kp LEFT_BRACKET
+&kp TAB    &hrm LEFT_GUI A  &hrm LEFT_ALT S  &hrm LEFT_CONTROL D  &hrm LEFT_SHIFT F  &kp G        &kp H        &hrm LEFT_SHIFT J  &hrm LEFT_CONTROL K  &hrm LEFT_ALT L  &hrm LEFT_GUI SEMI  &kp SQT
+&kp GRAVE  &kp Z            &kp X            &kp C                &kp V              &kp B        &kp N        &kp M              &kp COMMA            &kp DOT          &kp FSLH            &kp RIGHT_BRACKET
+                                             &kp DEL              &mo 1              &lt 2 RET    &lt 3 SPACE  &mo 4              &kp BACKSPACE
             >;
         };
 
-        lower_layer_numbers {
+        layer_numbers {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -81,16 +81,7 @@
             >;
         };
 
-        layer_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        raise_layer {
+        layer_special {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
             // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -111,6 +102,15 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
                                         &trans        &trans        &trans          &trans  &trans  &trans
+            >;
+        };
+
+        layer_arrows {
+            bindings = <
+&kp ESC  &kp N1                  &kp N2                  &kp N3               &kp N4                    &kp N5          &kp N6        &kp N7                    &kp N8               &kp N9                  &kp N0                  &trans
+&kp TAB  &hrm LEFT_GUI NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LCTRL NUMBER_3  &hrm LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &hrm LEFT_SHIFT NUMBER_7  &hrm LCTRL NUMBER_8  &hrm LEFT_ALT NUMBER_9  &hrm LEFT_GUI NUMBER_0  &trans
+&trans   &trans                  &trans                  &trans               &trans                    &trans          &trans        &trans                    &trans               &trans                  &trans                  &trans
+                                                         &kp DEL              &trans                    &kp SPACE       &kp RET       &trans                    &kp BACKSPACE
             >;
         };
     };
