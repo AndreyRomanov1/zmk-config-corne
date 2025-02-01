@@ -77,7 +77,7 @@
 &kp ESC  &kp N1                  &kp N2                  &kp N3               &kp N4                    &kp N5          &kp N6        &kp N7                    &kp N8               &kp N9                  &kp N0                  &trans
 &kp TAB  &hrm LEFT_GUI NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LCTRL NUMBER_3  &hrm LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &hrm LEFT_SHIFT NUMBER_7  &hrm LCTRL NUMBER_8  &hrm LEFT_ALT NUMBER_9  &hrm LEFT_GUI NUMBER_0  &trans
 &trans   &trans                  &trans                  &trans               &trans                    &trans          &trans        &trans                    &trans               &trans                  &trans                  &trans
-                                                         &kp DEL              &trans                    &kp SPACE       &kp RET       &trans                    &kp BACKSPACE
+                                                         &kp DEL              &trans                    &kp RET         &kp SPACE     &trans                    &kp BACKSPACE
             >;
         };
 
@@ -107,10 +107,10 @@
 
         layer_arrows {
             bindings = <
-&kp ESC  &kp N1                  &kp N2                  &kp N3               &kp N4                    &kp N5          &kp N6     &kp N7    &kp N8         &kp N9     &kp N0  &trans
-&kp TAB  &hrm LEFT_GUI NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LCTRL NUMBER_3  &hrm LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp LEFT   &kp DOWN  &kp UP         &kp RIGHT  &trans  &trans
-&trans   &trans                  &trans                  &trans               &trans                    &trans          &trans     &trans    &trans         &trans     &trans  &trans
-                                                         &kp DEL              &trans                    &kp RET         &kp SPACE  &trans    &kp BACKSPACE
+&kp ESC  &kp N1                  &kp N2                  &kp N3               &kp N4                    &kp N5          &kp N6     &kp N7         &kp N8         &kp N9     &kp N0  &trans
+&kp TAB  &hrm LEFT_GUI NUMBER_1  &hrm LEFT_ALT NUMBER_2  &hrm LCTRL NUMBER_3  &hrm LEFT_SHIFT NUMBER_4  &kp NUMBER_5    &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &trans  &trans
+&trans   &trans                  &trans                  &trans               &trans                    &trans          &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP    &kp END    &trans  &trans
+                                                         &kp DEL              &trans                    &kp RET         &kp SPACE  &trans         &kp BACKSPACE
             >;
         };
     };
