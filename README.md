@@ -1,5 +1,5 @@
 ![default](https://github.com/AndreyRomanov1/zmk-config-corne/blob/master/files/Pasted%20image%2020250201153704.png)
 ![numbers](https://github.com/AndreyRomanov1/zmk-config-corne/blob/master/files/Pasted%20image%2020250201153718.png)
 ![special](https://github.com/AndreyRomanov1/zmk-config-corne/blob/master/files/Pasted%20image%2020250201153731.png)
-![arrows](https://github.com/AndreyRomanov1/zmk-config-corne/blob/master/files/Pasted%20image%2020250201153744.png)
 ![bt](https://github.com/AndreyRomanov1/zmk-config-corne/blob/master/files/Pasted%20image%2020250201153753.png)
+![arrows](https://github.com/AndreyRomanov1/zmk-config-corne/blob/master/files/Pasted%20image%2020250201153744.png)
