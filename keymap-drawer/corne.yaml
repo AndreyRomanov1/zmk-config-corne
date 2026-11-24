@@ -1,0 +1,142 @@
+layout: {zmk_keyboard: corne}
+layers:
+  Base:
+  - - EN
+    - Q
+    - W
+    - E
+    - R
+    - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - {t: '[', s: Х}
+  - - RU
+    - {t: A, h: Win}
+    - {t: S, h: Alt}
+    - {t: D, h: Ctrl}
+    - {t: F, h: Shift}
+    - G
+    - H
+    - {t: J, h: Shift}
+    - {t: K, h: Ctrl}
+    - {t: L, h: Alt}
+    - {t: ;, h: Win, s: Ж}
+    - {t: '''', s: Э}
+  - - {t: '`', s: Ё}
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - {t: ',', s: Б}
+    - {t: ., s: Ю}
+    - {t: /, s: .}
+    - {t: ']', s: Ъ}
+  - - {t: ESC, h: Media}
+    - {t: TAB, h: Mouse}
+    - {t: SPACE, h: Nav}
+    - {t: RET, h: Sym}
+    - {t: BSPC, h: Num}
+    - {t: DEL, h: Fun}
+  Nav:
+  - ['', '', '', '', '', '', Redo, Paste, Copy, Cut, Undo, '']
+  - ['', Win, Alt, Ctrl, Shift, '', LEFT, DOWN, UP, RIGHT, CAPS, '']
+  - ['', '', '', '', '', '', HOME, PG DN, PG UP, END, INS, '']
+  - - ''
+    - ''
+    - {type: held}
+    - RET
+    - BSPC
+    - DEL
+  Mouse:
+  - ['', '', '', '', '', '', Redo, Paste, Copy, Cut, Undo, '']
+  - ['', Win, Alt, Ctrl, Shift, '', ←, ↓, ↑, →, '', '']
+  - ['', '', '', '', '', '', скр ←, скр ↓, скр ↑, скр →, '', '']
+  - - ''
+    - {type: held}
+    - ''
+    - ПКМ
+    - ЛКМ
+    - СКМ
+  Media:
+  - ['', '', '', '', '', '', '', Ярк −, Ярк +, '', '', '']
+  - ['', Win, Alt, Ctrl, Shift, '', PREV, Громк −, Громк +, NEXT, '', '']
+  - - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - {t: BT, h: '0'}
+    - {t: BT, h: '1'}
+    - {t: BT, h: '2'}
+    - {t: BT, h: '3'}
+    - ''
+    - BT CLR
+  - - {type: held}
+    - ''
+    - ''
+    - STOP
+    - Play/Pause
+    - MUTE
+  Num:
+  - - ''
+    - {t: '[', s: Х}
+    - '7'
+    - '8'
+    - '9'
+    - {t: ']', s: Ъ}
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - ['', ;, '4', '5', '6', '=', '', Shift, Ctrl, Alt, Win, '']
+  - - ''
+    - {t: '`', s: Ё}
+    - '1'
+    - '2'
+    - '3'
+    - \
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+    - ''
+  - - {t: ., s: Ю}
+    - '0'
+    - '-'
+    - ''
+    - {type: held}
+    - ''
+  Sym:
+  - ['', '{', '&', '*', (, '}', '', '', '', '', '', '']
+  - ['', ':', $, '%', ^, +, '', Shift, Ctrl, Alt, Win, '']
+  - ['', '~', '!', '@', '#', '|', '', '', '', '', '', '']
+  - - (
+    - )
+    - _
+    - {type: held}
+    - ''
+    - ''
+  Fun:
+  - ['', F12, F7, F8, F9, PSCRN, '', '', '', '', '', '']
+  - ['', F11, F4, F5, F6, SLCK, '', Shift, Ctrl, Alt, Win, '']
+  - ['', F10, F1, F2, F3, PAUSE BREAK, '', '', '', '', '', '']
+  - - APP
+    - SPACE
+    - TAB
+    - ''
+    - ''
+    - {type: held}
+combos:
+- p: [16, 19]
+  k: Caps Word
+  l: [Base]
